@@ -12,12 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.curso.springboot.springmvc.models.User;
 
-@Controller
+@RestController
 @RequestMapping("/api")
 public class UserRestController {
 	
 	@GetMapping("/details")
-	@ResponseBody
 	public Map<String, Object> details() {
 		
 		User user = new User("Adrian", "Tobon");
