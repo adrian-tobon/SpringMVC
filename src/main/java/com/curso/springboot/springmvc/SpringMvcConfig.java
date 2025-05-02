@@ -6,7 +6,7 @@ import org.springframework.context.annotation.PropertySources;
 
 @Configuration
 @PropertySources({	
-	@PropertySource("classpath:config/values.properties")
+	@PropertySource(value="classpath:config/values.properties", encoding="UTF-8")
 })
 public class SpringMvcConfig {
 
