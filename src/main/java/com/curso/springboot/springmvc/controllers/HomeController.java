@@ -10,8 +10,8 @@ public class HomeController {
 	public String home() {
 		
 		
-		//return "redirect:/list";
-		return "forward:/list";
+		return "redirect:/list";
+		//return "forward:/list";
 	}	
 
 }
