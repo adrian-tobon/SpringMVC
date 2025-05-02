@@ -18,6 +18,8 @@
 	</ul>
 	
 	<a th:href="@{/list}">Ver listado</a>
-	<a th:href="@{'/api/params/foo?message=' + ${title}}">Ver mensaje</a>
+	<a th:href="@{/api/params/foo(mensaje=${title})}">Ver mensaje</a>
+	<a th:href="@{/api/params/bar(text=${title},code=2345)}">Ver multiples parametros</a>
+	<a th:href="@{/api/var/baz/{message}(message=${title})}">Ver path variable</a>
 </body>
 </html>
